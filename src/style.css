@@ -1,9 +1,70 @@
 body {
-    background: #c49c8f;
-    font: 12pt Arial;
+  background: #c49c8f;
+  font: 12pt Arial;
 }
 h1 {
-  background-color: rgb(85, 54, 54);  
+  background-color: rgb(85, 54, 54);
+  color: #c49c8f;  
   text-align: center;  
   padding: 10px;
-  }
+}
+p#txtMsg {
+  text-align: center;
+}
+input#msg {
+  width: 400px;
+  height: 100px;
+  left: 50%;
+  margin: -130px 0 0 -210px;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+}
+p#txtChave {
+  text-align: center;
+  position: static;
+  padding-top: 10%;
+}
+input#chave {
+  width: 80px;
+  height: 20px;
+}
+button#btnCifrar {
+  font: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(85, 54, 54);
+  color: #c49c8f;
+  box-shadow: 0 3px 0 black;  
+}
+button#btnDecifrar {
+  font: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(85, 54, 54);
+  color: #c49c8f;
+  box-shadow: 0 3px 0 black;   
+}
+p#result {
+  text-align: center;
+  background: white;
+  width: 400px;
+  height: 100px;
+  left: 50%;
+  margin: -130px 0 0 -210px;
+  padding: 10px;
+  position: absolute;
+  top: 80%;  
+}
+#cifrar, #decifrar {
+  position: relative;
+  left: 43%;
+  display: inline-block;
+  padding: 10px;
+}
