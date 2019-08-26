@@ -10,15 +10,16 @@ h1 {
 }
 p#txtMsg {
   text-align: center;
+  position: relative;  
 }
 input#msg {
   width: 400px;
-  height: 100px;
+  height: 80px;
   left: 50%;
-  margin: -130px 0 0 -210px;
-  padding: 10px;
+  margin: -130px 0 0 -210px;  
   position: absolute;
   top: 40%;
+  text-align: center;
 }
 p#txtChave {
   text-align: center;
@@ -51,20 +52,21 @@ button#btnDecifrar {
   color: #c49c8f;
   box-shadow: 0 3px 0 black;   
 }
-p#result {
-  text-align: center;
+p#resultado {
+  text-align: center;    
   background: white;
   width: 400px;
-  height: 100px;
+  height: 80px;
   left: 50%;
-  margin: -130px 0 0 -210px;
-  padding: 10px;
+  margin: -130px 0 0 -210px;  
   position: absolute;
   top: 80%;  
+  font: 12px Arial;   
 }
 #cifrar, #decifrar {
+  text-align: center;
   position: relative;
-  left: 43%;
+  left: 41%; 
   display: inline-block;
   padding: 10px;
 }
