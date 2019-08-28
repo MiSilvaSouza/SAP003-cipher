@@ -53,15 +53,16 @@ button#btnDecifrar {
   box-shadow: 0 3px 0 black;   
 }
 p#resultado {
-  text-align: center;    
+  text-align: center;
+  padding-top: 3%;    
   background: white;
   width: 400px;
-  height: 80px;
+  height: 50px;
   left: 50%;
   margin: -130px 0 0 -210px;  
   position: absolute;
   top: 80%;  
-  font: 12px Arial;   
+  font: 12px Arial;    
 }
 #cifrar, #decifrar {
   text-align: center;
@@ -70,3 +71,12 @@ p#resultado {
   display: inline-block;
   padding: 10px;
 }
+footer {
+  background-color: rgb(85, 54, 54);   
+  text-align: center;  
+  padding: 30px;
+  position: relative;
+  margin-top: 15%;
+}
+
+
