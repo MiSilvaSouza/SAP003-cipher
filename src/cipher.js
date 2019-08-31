@@ -10,7 +10,7 @@ function encode(chave, mensagem) {
     if (mensagem.charCodeAt(i) >=65 && mensagem.charCodeAt(i) <=90) {
       resultado += String.fromCharCode((((mensagem.charCodeAt(i) - 65 + chave) % 26) + 65));    
     } 
-    else if (mensagem.charCodeAt(i) >=97 && mensagem.charCodeAt(i) <=122) {
+    if (mensagem.charCodeAt(i) >=97 && mensagem.charCodeAt(i) <=122) {
       resultado += String.fromCharCode((((mensagem.charCodeAt(i) - 97 + chave) % 26) + 97));
     } 
     else if (mensagem.charCodeAt(i) >=32 && mensagem.charCodeAt(i) <=64) {
@@ -25,7 +25,7 @@ function decode(chave, mensagem) {
     if (mensagem.charCodeAt(i) >=65 && mensagem.charCodeAt(i) <=90) {
       resultado += String.fromCharCode((((mensagem.charCodeAt(i) - 90 - chave) % 26) + 90));    
     } 
-    else if (mensagem.charCodeAt(i) >=97 && mensagem.charCodeAt(i) <=122) {
+    if (mensagem.charCodeAt(i) >=97 && mensagem.charCodeAt(i) <=122) {
       resultado += String.fromCharCode((((mensagem.charCodeAt(i) - 122 - chave) % 26) + 122));
     } 
     else if (mensagem.charCodeAt(i) >=32 && mensagem.charCodeAt(i) <=64) {
