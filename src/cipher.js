@@ -6,7 +6,7 @@ window.cipher = {
 };
 function encode(chave, mensagem) {
   let resultado = "";
-  for (letra of mensagem) {
+  for (let letra of mensagem) {
     const msgCode = letra.charCodeAt();
     const maiusculas = (msgCode >= 65 && msgCode <= 90);
     const minusculas = (msgCode >= 97 && msgCode <= 122);
@@ -26,7 +26,7 @@ function encode(chave, mensagem) {
 }
 function decode(chave, mensagem) {
   let resultado = "";
-  for (letra of mensagem) {
+  for (let letra of mensagem) {
     const msgCode = letra.charCodeAt();
     const maiusculas = (msgCode >= 65 && msgCode <= 90);
     const minusculas = (msgCode >= 97 && msgCode <= 122);
