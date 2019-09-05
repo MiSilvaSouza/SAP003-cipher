@@ -2,16 +2,19 @@ body {
   background: #c49c8f;
   font: 12pt Arial;
 }
+
 h1 {
   background-color: rgb(85, 54, 54);
   color: #c49c8f;  
   text-align: center;  
   padding: 10px;
 }
-p#txtMsg {
+
+p#txt-msg {
   text-align: center;
   position: relative;  
 }
+
 input#msg {
   width: 400px;
   height: 80px;
@@ -21,16 +24,19 @@ input#msg {
   top: 40%;
   text-align: center;
 }
-p#txtChave {
+
+p#txt-chave {
   text-align: center;
   position: static;
   padding-top: 10%;
 }
+
 input#chave {
   width: 80px;
   height: 20px;
 }
-button#btnCifrar {
+
+button#btn-cifrar {
   font: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -41,7 +47,8 @@ button#btnCifrar {
   color: #c49c8f;
   box-shadow: 0 3px 0 black;  
 }
-button#btnDecifrar {
+
+button#btn-decifrar {
   font: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -52,6 +59,7 @@ button#btnDecifrar {
   color: #c49c8f;
   box-shadow: 0 3px 0 black;   
 }
+
 p#resultado {
   text-align: center;
   padding-top: 3%;    
@@ -64,6 +72,7 @@ p#resultado {
   top: 80%;  
   font: 12px Arial;    
 }
+
 #cifrar, #decifrar {
   text-align: center;
   position: relative;
@@ -71,7 +80,8 @@ p#resultado {
   display: inline-block;
   padding: 10px;
 }
-footer {
+
+section {
   background-color: rgb(85, 54, 54);   
   text-align: center;  
   padding: 30px;
