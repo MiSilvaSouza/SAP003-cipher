@@ -3,26 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>CodeMi</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Michroma|Neucha&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="root">
       <h1>CodeMi</h1>
     </header>
-    <p id="txt-msg">DIGITE SUA MENSAGEM</p> 
-    <p><input type="text" id="msg"></p>
-    <p id="txt-chave">Chave de deslocamento: <input type="number" name="chave" id="chave" min="1"></p>
-    <div id="cifrar">
-      <button id="btn-cifrar">Cifrar</button>      
-    </div>
-    <div id="decifrar">
-      <button id="btn-decifrar">Decifrar</button>      
-    </div>
-    <div>
-      <p id="resultado"></p>
-    </div>        
+    <main>
+      <div class="div-msg">
+        <textarea name="text" class="msg" placeholder="Digite sua mensagem"></textarea>
+      </div>
+      <form>
+        <label class="txt-chave">Chave de deslocamento:</label>  
+        <input type="number" name="chave" class="chave" min="1">
+      </form>       
+      <div class="div-button">
+        <button class="btn-cifrar button">Cifrar</button>
+        <button class="btn-decifrar button">Decifrar</button>      
+      </div>      
+      <div class="div-msg">
+        <p class="resultado msg"></p>
+      </div>
+    </main>    
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
-    <section></section>
-  </body>  
+    <script src="index.js"></script>  
+  </body>
+  <footer>Desenvolvido por Mirian Souza</footer>  
 </html>
