@@ -1,92 +1,101 @@
-body {
-  background: #c49c8f;
-  font: 12pt Arial;
+* {
+  margin: 0; 
+  font-family: 'Michroma', sans-serif;
+  font-size: 20px;
+  color: #B0AFDB;
 }
 
-h1 {
-  background-color: rgb(85, 54, 54);
-  color: #c49c8f;  
+body {
+  background: #4F50A3;  
+}
+
+h1 {  
+  background-color: #33B775;
+  color: #4F50A3;  
   text-align: center;  
   padding: 10px;
+  font-size: 30px;
 }
 
-p#txt-msg {
-  text-align: center;
-  position: relative;  
+main {
+  padding-top: 80px;
+  width: 100%;
+  height: 200px;
 }
 
-input#msg {
+.div-msg {
+  background-image: url(./img/code.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.msg {  
   width: 400px;
-  height: 80px;
-  left: 50%;
-  margin: -130px 0 0 -210px;  
-  position: absolute;
-  top: 40%;
-  text-align: center;
+  height: 200px;
+  resize: none;
+  background-color: #B0AFDB;
+  color: #121756;  
 }
 
-p#txt-chave {
-  text-align: center;
-  position: static;
-  padding-top: 10%;
+form {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 35%;
+  margin-right: 35%; 
 }
 
-input#chave {
+.txt-chave { 
+  text-align: center;
+  font-weight: bold;
+}
+
+.chave {    
   width: 80px;
   height: 20px;
+  color: #121756;
+  text-align: center;
+  background-color: #33B775; 
+  opacity: 0.7;
+  border: none;
 }
 
-button#btn-cifrar {
+.div-button {
+  display: flex;
+  justify-content: space-around;  
+  padding: 20px;
+  margin-left: 32%;
+  margin-right: 32%; 
+}
+
+.button {
+  width: 200px;
   font: bold;
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px;
   border: none;
   border-radius: 20px;
-  background: rgb(85, 54, 54);
-  color: #c49c8f;
+  background: #33B775;
+  color: #4F50A3;
   box-shadow: 0 3px 0 black;  
 }
 
-button#btn-decifrar {
-  font: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  background: rgb(85, 54, 54);
-  color: #c49c8f;
-  box-shadow: 0 3px 0 black;   
+.button:hover {
+  opacity: 0.7;
 }
 
-p#resultado {
+.button:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #33B775;   
   text-align: center;
-  padding-top: 3%;    
-  background: white;
-  width: 400px;
-  height: 50px;
-  left: 50%;
-  margin: -130px 0 0 -210px;  
-  position: absolute;
-  top: 80%;  
-  font: 12px Arial;    
+  color: #4F50A3;
+  font-size: 16px;
+  position: fixed;
+  left: 0;
+  bottom: 0;  
+  width: 100%;
 }
-
-#cifrar, #decifrar {
-  text-align: center;
-  position: relative;
-  left: 41%; 
-  display: inline-block;
-  padding: 10px;
-}
-
-section {
-  background-color: rgb(85, 54, 54);   
-  text-align: center;  
-  padding: 30px;
-  position: relative;
-  margin-top: 15%;
-}
-
-
