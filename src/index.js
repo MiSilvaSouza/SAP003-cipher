@@ -1,11 +1,9 @@
-const chave = document.getElementById("chave");
-const mensagem = document.getElementById("msg");
+const chave = document.querySelector(".chave");
+const mensagem = document.querySelector(".msg");
 
-document.getElementById("btn-cifrar").onclick = function cifrar() {
-  window.cipher.encode(chave.value, mensagem.value);
-  document.getElementById("resultado").innerHTML = window.cipher.encode(+(chave.value), mensagem.value);
+document.querySelector(".btn-cifrar").onclick = function cifrar() {  
+  document.querySelector(".resultado").innerHTML = window.cipher.encode(+(chave.value), mensagem.value);
 };
-document.getElementById("btn-decifrar").onclick = function decifrar() {
-  window.cipher.decode(chave.value, mensagem.value);
-  document.getElementById("resultado").innerHTML = window.cipher.decode(+(chave.value), mensagem.value);
+document.querySelector(".btn-decifrar").onclick = function decifrar() {  
+  document.querySelector(".resultado").innerHTML = window.cipher.decode(+(chave.value), mensagem.value);
 };

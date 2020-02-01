@@ -1,9 +1,8 @@
 window.cipher = {
   encode: encode,
   decode: decode
-  // ...
-
 };
+
 function encode(chave, mensagem) {
   let resultado = "";
   for (let letra of mensagem) {
@@ -24,6 +23,7 @@ function encode(chave, mensagem) {
   }
   return resultado;
 }
+
 function decode(chave, mensagem) {
   let resultado = "";
   for (let letra of mensagem) {
